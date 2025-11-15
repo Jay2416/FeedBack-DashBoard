@@ -14,7 +14,7 @@ app.use(express.json());
 const allowedOrigin = process.env.CORS_ORIGIN || "*";
 app.use(
   cors({
-    origin: allowedOrigin,
+    origin: "https://feedback-dashboard-olive.vercel.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
   })
